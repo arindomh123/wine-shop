@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--fontasowm cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header_content">
+          <!-- Logo -->
+          <div class="brand">
+            <a href="index.html">
+              <img src="img/logo.png" alt="everetts" loading="lazy" />
+            </a>
+          </div>
+
+          <!-- Nav Menu -->
+          <nav class="nav" id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+            <a href="shop.html" class="active">shop</a>
+            <a href="blog.html">blog</a>
+            <a href="team.html">team</a>
+          </nav>
+
+          <!-- Right Icons -->
+          <div class="right">
+            <div class="cird_icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <p>0</p>
+            </div>
+            <div class="line_img">
+              <img src="img/line.png" alt="line" />
+            </div>
+            <div class="menu-toggle" id="menuToggle">☰</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!---------hero section-------->
+    <section class="shop_banner">
+      <div class="container">
+        <h3 class="shop_detles_h3">
+          HOME - <span>SHOP -</span> WINE - ALMOND LIQUER
+        </h3>
+      </div>
+    </section>
+    <!--------shop detles zoom-------->
+    <section class="chop_detles">
+      <div class="container">
+        <div class="shop_detles_content">
+          <!-- Thumbnails -->
+          <div class="thumbs">
+            <div class="thumbs_img">
+                <img src="img/wine1.png" onclick="changeImage(this)" />
+            </div>
+            <div class="thumbs_img">
+                <img src="img/wine2.png" onclick="changeImage(this)" />
+            </div>
+            <div class="thumbs_img">
+                <img src="img/wine3.png" onclick="changeImage(this)" />
+            </div>
+          </div>
+
+          <!-- Main Image -->
+          <div class="main-img">
+            <img id="mainImage" src="img/wine1.png" />
+          </div>
+
+          <!-- Product Info -->
+          <div class="product">
+            <h4>ALMOND LIQUER</h4>
+            <div class="price">$85.00</div>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p class="desc">
+              Lorem ipsum dolor sit amet consectetur. Etiam diam in est ac orci tortor neque purus posuere. Tortor neque blandit mattis id vitae faucibus varius et. Tincidunt sit senectus ipsum bibendum venenatis laoreet. Lacus eget nunc pulvinar ultricies morbi dolor ornare. Vel purus sollicitudin
+            </p>
+
+            <!-- Quantity + Cart -->
+            <div style="display: flex; align-items: center">
+              <div class="qty">
+                <button onclick="decrease()">-</button>
+                <input type="text" id="qty" value="1" />
+                <button onclick="increase()">+</button>
+              </div>
+
+              <button class="btn">ADD TO CART</button>
+            </div>
+
+            <!-- Meta -->
+            <div class="meta_shop">
+              <p><span>Sku:</span> 001</p>
+              <p><span>Category:</span> wine</p>
+              <p><span>Tags:</span> Dry, Italy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------DISCRIPTION------>
+    <section class="DISCRIPTION">
+      <div class="DISCRIPTION_text">
+        <a href="#" class="show_active">DISCRIPTION</a>
+        <a href="#">ADDITIONAL INFORMATION</a>
+        <a href="#">REVIEW</a>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur. In risus in neque urna laoreet curabitur gravida pulvinar. Habitant viverra morbi sit mus morbi feugiat magna ultrices. Nunc auctor urna duis risus lectus euismod gravida. Ut molestie ullamcorper dictum vel tincidunt sem scelerisque in sed. Eleifend at aliquet purus cras. Condimentum purus fermentum pellentesque diam risus vestibulum fermentum. Rutrum eget dictum quam elit. Morbi etiam euismod sed varius fringilla elementum mus enim gravida. Sed dictumst lacinia nisl in in.</p>
+    </section>
+    <!---------RELATED PRODUCTS--------->
+    <section class="RELATED_PRODUCTS">
+      <div class="container">
+        <h4 class="RELATED_PRODUCTS_h4">RELATED PRODUCTS</h4>
+        <div class="row">
+          <div class="col25">
+            <div class="RELATED_PRODUCTS_cird">
+              <div class="RELATED_PRODUCTS_cird_img"><img src="img/wine1.png" alt="img"></div>
+              <h4>TUSCANY MAIN</h4>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <h5>$51.00</h5>
+            </div>
+          </div>
+          <div class="col25">
+            <div class="RELATED_PRODUCTS_cird">
+              <div class="RELATED_PRODUCTS_cird_img"><img src="img/wine6.png" alt="img"></div>
+              <h4>TUSCANY MAIN</h4>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <h5>$51.00</h5>
+            </div>
+          </div>
+          <div class="col25">
+            <div class="RELATED_PRODUCTS_cird">
+              <div class="RELATED_PRODUCTS_cird_img"><img src="img/wine2.png" alt="img"></div>
+              <h4>TUSCANY MAIN</h4>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <h5>$51.00</h5>
+            </div>
+          </div>
+          <div class="col25">
+            <div class="RELATED_PRODUCTS_cird">
+              <div class="RELATED_PRODUCTS_cird_img"><img src="img/wine4.png" alt="img"></div>
+              <h4>TUSCANY MAIN</h4>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <h5>$51.00</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------------footer----------->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="custom">
+          <a href="index.html" class="footer_logo"
+            ><img src="img/footer_icon.png" alt="logo"
+          /></a>
+          <div class="footer_item">
+            <!-- Orders -->
+            <div class="footer-box">
+              <p class="footer_title">ORDERS</p>
+
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+              <p class="footer_box_p">Lorem ipsum dolor sit amet consectetur.</p>
+
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <!-- Contact -->
+            <div class="footer-box contact">
+              <p class="footer_title">CONTACT</p>
+
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+              <p class="phone">+1234000021 +4321000012 +0000543210</p>
+
+              <p>Lorem ipsum@gmail.com</p>
+
+              <div class="social">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Footer -->
+
+        <div class="bottom-footer">
+          <a href="#">Privacy Policy</a>
+
+          <p>Copyright &copy; Qade Interactive 2025</p>
+
+          <a href="#">Impresun</a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+// Change Image
+function changeImage(el) {
+  document.getElementById("mainImage").src = el.src;
+}
+
+// Quantity
+function increase() {
+  let qty = document.getElementById("qty");
+  qty.value = parseInt(qty.value) + 1;
+}
+
+function decrease() {
+  let qty = document.getElementById("qty");
+  if (qty.value > 1) {
+    qty.value = parseInt(qty.value) - 1;
+  }
+}
+</script>
+  </body>
+</html>

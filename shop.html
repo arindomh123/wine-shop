@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--fontasowm cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header_content">
+          <!-- Logo -->
+          <div class="brand">
+            <a href="index.html">
+              <img src="img/logo.png" alt="everetts" loading="lazy" />
+            </a>
+          </div>
+
+          <!-- Nav Menu -->
+          <nav class="nav" id="navMenu">
+            <a href="index.html" >Home</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+            <a href="shop.html" class="active">shop</a>
+            <a href="blog.html">blog</a>
+            <a href="team.html">team</a>
+          </nav>
+
+          <!-- Right Icons -->
+          <div class="right">
+            <div class="cird_icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <p>0</p>
+            </div>
+            <div class="line_img">
+              <img src="img/line.png" alt="line" />
+            </div>
+            <div class="menu-toggle" id="menuToggle">☰</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!---------hero section-------->
+    <section class="shop_banner">
+      <div class="container">
+        <h3>HOME - <span>SHOP</span></h3>
+      </div>
+    </section>
+    <!--------shop filter-------->
+    <section class="shop_filter">
+      <div class="container">
+        <div class="row">
+          <div class="col80">
+            <!-- LEFT: PRODUCTS -->
+            <div class="shop_left">
+              <!-- TOP BAR -->
+              <div class="top_bar">
+                <p>Showing <span id="showing"></span> of 12 results</p>
+                <p>Defeult sorting</p>
+              </div>
+
+              <!-- PRODUCT GRID -->
+              <div class="grid" id="grid"></div>
+
+              <!-- PAGINATION -->
+              <div class="pagination" id="pagination"></div>
+            </div>
+          </div>
+          <div class="col20">
+            <!-- RIGHT: SIDEBAR -->
+            <aside class="sidebar">
+              <!-- <h3>FILTER</h3>
+    <input type="range" min="20" max="90"> -->
+              <div class="filter-box">
+                <h3>FILTER</h3>
+
+                <div class="range-slider">
+                  <input
+                    type="range"
+                    id="minRange"
+                    min="0"
+                    max="100"
+                    value="0"
+                  />
+                  <input
+                    type="range"
+                    id="maxRange"
+                    min="0"
+                    max="100"
+                    value="100"
+                  />
+                </div>
+
+                <p class="price-text">
+                  PRICE: $<span id="minPrice">20</span> - $<span id="maxPrice"
+                    >90</span
+                  >
+                </p>
+              </div>
+
+              <h3>CATEGORIES</h3>
+              <ul>
+                <li>Beverage (4)</li>
+                <li>Bianco (4)</li>
+                <li>Liqueur (8)</li>
+                <li>Nero (3)</li>
+                <li>Sparkling (4)</li>
+                <li>Wine (12)</li>
+              </ul>
+              <!-- PRODUCTS -->
+              <h3>PRODUCTS</h3>
+              <div class="mini-product">
+                <img src="img/WALLACE1.png" />
+                <div class="WALLACE_text">
+                  <p>WALLACE WINE</p>
+                  <div class="star_wine">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <span>$1.00</span>
+                </div>
+              </div>
+
+              <div class="mini-product">
+                <img src="img/WALLACE2.png" />
+                <div class="WALLACE_text">
+                  <p>WALLACE WINE</p>
+                  <div class="star_wine">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <span>$1.00</span>
+                </div>
+              </div>
+              <!-- TAGS -->
+               <div class="tags">
+                 <h3>TAGS</h3>
+              <p class="Dry_p">Dry France Italy Bianco</p>
+              <p class="Dry_p">Vino Roso Whisky Wine</p>
+               </div>
+               <div class="SEARCH">
+                  <h3>SEARCH</h3>
+              <input class="Search_box" type="text" placeholder="Search..."  />
+              <i class="fa-solid fa-magnifying-glass"></i>
+               </div>
+
+               <h3>INSTAGRAM</h3>
+               <img src="img/Group 4.png" alt="group">
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------------footer----------->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="custom">
+          <a href="index.html" class="footer_logo"
+            ><img src="img/footer_icon.png" alt="logo"
+          /></a>
+          <div class="footer_item">
+            <!-- Orders -->
+            <div class="footer-box">
+              <p class="footer_title">ORDERS</p>
+
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+              <p class="footer_box_p">Lorem ipsum dolor sit amet consectetur.</p>
+
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <!-- Contact -->
+            <div class="footer-box contact">
+              <p class="footer_title">CONTACT</p>
+
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+              <p class="phone">+1234000021 +4321000012 +0000543210</p>
+
+              <p>Lorem ipsum@gmail.com</p>
+
+              <div class="social">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Footer -->
+
+        <div class="bottom-footer">
+          <a href="#">Privacy Policy</a>
+
+          <p>Copyright &copy; Qade Interactive 2025</p>
+
+          <a href="#">Impresun</a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

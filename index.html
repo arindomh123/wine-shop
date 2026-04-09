@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--fontasowm cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header_content">
+          <!-- Logo -->
+          <div class="brand">
+            <a href="index.html">
+              <img src="img/logo.png" alt="everetts" loading="lazy" />
+            </a>
+          </div>
+
+          <!-- Nav Menu -->
+          <nav class="nav" id="navMenu">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+            <a href="shop.html">shop</a>
+            <a href="blog.html">blog</a>
+            <a href="team.html">team</a>
+          </nav>
+
+          <!-- Right Icons -->
+          <div class="right">
+            <div class="cird_icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <p>0</p>
+            </div>
+            <div class="line_img">
+              <img src="img/line.png" alt="line" />
+            </div>
+            <div class="menu-toggle" id="menuToggle">☰</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!---------hero section-------->
+    <section class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col50">
+            <div class="hero-text">
+              <p class="tag">Tastes Like Heaven</p>
+              <h1>DISCOVER</h1>
+              <h2>PLENTY OF</h2>
+              <h3>WINERIES</h3>
+
+              <button class="discover-btn">DISCOVER</button>
+            </div>
+          </div>
+          <div class="col50">
+            <div class="slides">
+              <div class="slide active">
+                <img src="img/wine1.png" />
+                <p class="text">
+                Lorem ipsum dolor sit amet consectetur Proin sed vel elementum
+                in tristique egestas neque. Viverra bibendum nisl ut condimentum
+                porta.
+                </p>
+              </div>
+
+              <div class="slide">
+                <img src="img/wine2.png" />
+                <p class="text">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque non harum labore culpa laboriosam provident.
+                </p>
+              </div>
+
+              <div class="slide">
+                <img src="img/wine3.png" />
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, quam.
+                </p>
+              </div>
+              <!-- DOTS -->
+              <div class="dots">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+              </div>
+
+              <!-- ARROWS -->
+              <div class="arrow up" onclick="prevSlide()"><i class="fa-solid fa-angle-up"></i></div>
+              <!-- <div class="arrow down" onclick="nextSlide()">⌄</div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-----------cird section--------->
+    <section class="products">
+      <div class="container">
+        <!-- Category Menu -->
+
+        <div class="menu">
+          <a class="active">Show All</a>
+          <a>Beverage</a>
+          <a>Blanco</a>
+          <a>Liqueur</a>
+          <a>Nero</a>
+          <a>Sparkling</a>
+          <a>Wine</a>
+        </div>
+
+        <!-- Product Grid -->
+
+        <div class="row">
+          <div class="col33">
+            <div class="card">
+              <div class="img-box">
+                <div class="wine_img_box">
+                    <img src="img/wine1.png" />
+                </div>
+              </div>
+              <h3>TUSCANY MAIN</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <span>$51.00</span>
+            </div>
+          </div>
+          <div class="col33">
+            <div class="card">
+              <div class="img-box">
+                <div class="wine_img_box">
+                      <img src="img/wine3.png" />
+                </div>
+              </div>
+              <h3>TUSCANY MAIN</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <span>$51.00</span>
+            </div>
+          </div>
+
+          <div class="col33">
+            <div class="card">
+              <div class="img-box">
+                <div class="wine_img_box">
+                    <img src="img/wine2.png" />
+                </div>
+              </div>
+              <h3>TUSCANY MAIN</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <span>$51.00</span>
+            </div>
+          </div>
+
+          <div class="col33">
+            <div class="card">
+              <div class="img-box">
+                <div class="wine_img_box">
+                   <img src="img/wine5.png" />
+                </div>
+              </div>
+              <h3>TUSCANY MAIN</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <span>$51.00</span>
+            </div>
+          </div>
+
+          <div class="col33">
+            <div class="card">
+              <div class="img-box">
+                <div class="wine_img_box">
+                     <img src="img/wine4.png" />
+                </div>
+              </div>
+              <h3>TUSCANY MAIN</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <span>$51.00</span>
+            </div>
+          </div>
+
+          <div class="col33">
+            <div class="card">
+              <div class="img-box">
+                <div class="wine_img_box">
+                 <img src="img/wine6.png" />
+                </div>
+              </div>
+              <h3>TUSCANY MAIN</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <span>$51.00</span>
+            </div>
+          </div>
+          <!-- <img src="img/designe hero saction 4.png" alt="flower" class="flower_icon"> -->
+        </div>
+      </div>
+    </section>
+    <!--------------hero banner------------->
+    <section class="hero_banner">
+      <div class="container">
+        <div class="custom">
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <h3>Where can you taste our drinks</h3>
+          <button>Shop Now</button>
+        </div>
+      </div>
+    </section>
+    <!------------TOSCANA section---------->
+    <section class="toscana">
+      <div class="toscana_cird1">
+        <img src="img/map 1.png" alt="map" />
+        <div class="map_location">
+          <div class="map_dot"></div>
+          <div class="map_line"></div>
+          <div class="map_text">
+            <h4>TOSCANA</h4>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+      </div>
+      <div class="toscana_cird2">
+        <div class="toscana_cird2_text">
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <h4>NAPA VALLEY IS THE</h4>
+          <h4>MOST FAMOUS</h4>
+          <h4>WINEMAKING REGION IN</h4>
+          <h4>PIEMONTE REGION</h4>
+        </div>
+        <button>DISCOVER</button>
+        <div class="toscana_cird_img">
+          <img src="img/fotter foto 1.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!--------OLD TRADITION---------->
+    <section class="TRADITION">
+      <div class="container">
+        <div class="custom">
+          <div class="TRADITION_text">
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <h4>THE BEST RECIPES AND</h4>
+            <h4>OLD TRADITION</h4>
+          </div>
+          <div class="row">
+            <div class="col25">
+              <div class="TRADITION_cird">
+                <img src="img/Mask group (4).png" alt="img" />
+                <h4>APR 20 - LEONA LOWIS - WINES</h4>
+                <h5>WINE DELIGHT</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Facilisis dui proin
+                  mattis dictum nulla. Facilisis nisl in vel adipiscing proin.
+                </p>
+                <a href="#">READ MORE</a>
+              </div>
+            </div>
+            <div class="col25">
+              <div class="TRADITION_cird">
+                <img src="img/Mask group (5).png" alt="img" />
+                <h4>APR 20 - LEONA LOWIS - WINES</h4>
+                <h5>WINE DELIGHT</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Facilisis dui proin
+                  mattis dictum nulla. Facilisis nisl in vel adipiscing proin.
+                </p>
+                <a href="#">READ MORE</a>
+              </div>
+            </div>
+            <div class="col25">
+              <div class="TRADITION_cird">
+                <img src="img/Mask group (6).png" alt="img" />
+                <h4>APR 20 - LEONA LOWIS - WINES</h4>
+                <h5>WINE DELIGHT</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Facilisis dui proin
+                  mattis dictum nulla. Facilisis nisl in vel adipiscing proin.
+                </p>
+                <a href="#">READ MORE</a>
+              </div>
+            </div>
+            <div class="col25">
+              <div class="TRADITION_cird">
+                <img src="img/Mask group (7).png" alt="img" />
+                <h4>APR 20 - LEONA LOWIS - WINES</h4>
+                <h5>WINE DELIGHT</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Facilisis dui proin
+                  mattis dictum nulla. Facilisis nisl in vel adipiscing proin.
+                </p>
+                <a href="#">READ MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------WHISKEYN SELECTION------->
+    <section class="WHISKEYN">
+      <h4>WHISKEYN SELECTION</h4>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </section>
+    <!----------HANDMADE------------>
+    <section class="HANDMADE">
+      <div class="HANDMADE_cird1">
+        <h5>HANDMADE</h5>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+      </div>
+
+      <div class="HANDMADE_cird2">
+        <h5>SPECIAL EDT.</h5>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+      </div>
+    </section>
+    <!-------MUSCAT-------->
+    <section class="MUSCAT">
+      <div class="container">
+        <div class="custom">
+          <div class="row">
+            <div class="col50">
+              <div class="MUSCAT_cird1">
+                <img src="img/MUSCAT.png" alt="MUSCAT" />
+              </div>
+            </div>
+            <div class="col50">
+              <div class="MUSCAT_cird2">
+                <div class="MUSCAT_cird2_item">
+                  <svg
+                    width="34"
+                    height="36"
+                    viewBox="0 0 34 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23.46 8.2763C23.0801 8.27673 22.7006 8.30106 22.323 8.34919C21.4991 6.71959 20.4257 5.27712 19.1553 4.09231C13.6112 -1.08342 6.03187 0.0998923 5.71247 0.152446C5.47729 0.191039 5.25779 0.311397 5.08305 0.497575C4.90832 0.683753 4.7866 0.926965 4.73401 1.19499C4.68142 1.46301 4.70045 1.7432 4.78858 1.99843C4.87671 2.25365 5.02977 2.47188 5.2275 2.62419C7.79154 4.6009 8.96513 7.8796 9.4545 11.0566C7.74626 11.2628 6.10737 11.9485 4.6802 13.0541C3.25303 14.1597 2.08075 15.6518 1.26519 17.4007C0.44963 19.1497 0.015464 21.1026 0.00040555 23.0898C-0.0146529 25.077 0.389852 27.0384 1.17878 28.8036C1.96771 30.5688 3.1172 32.0845 4.52739 33.2189C5.93759 34.3533 7.56584 35.0721 9.27069 35.3129C10.9755 35.5538 12.7054 35.3093 14.3101 34.6009C15.9147 33.8924 17.3456 32.7413 18.4784 31.2475C19.8923 32.1219 21.4598 32.6118 23.0618 32.6802C24.6639 32.7486 26.2583 32.3936 27.724 31.6423C29.1898 30.8909 30.4882 29.7628 31.5207 28.3438C32.5532 26.9249 33.2926 25.2523 33.6828 23.4531C34.073 21.6539 34.1036 19.7756 33.7724 17.9607C33.4412 16.1457 32.7569 14.442 31.7714 12.979C30.7859 11.5159 29.5252 10.332 28.085 9.51713C26.6449 8.70226 25.0631 8.27791 23.46 8.2763ZM8.80836 2.74455C11.2508 2.86661 14.8507 3.5549 17.6931 6.21651C18.5405 7.01235 19.2812 7.94932 19.8909 8.9968C18.2113 9.69733 16.7123 10.8783 15.5335 12.4298C14.385 11.7153 13.1313 11.2553 11.8369 11.0735C11.3783 7.6982 10.3556 4.88571 8.80836 2.74455ZM10.5666 32.6885C8.46435 32.6873 6.44276 31.7525 4.91885 30.0769C3.39494 28.4014 2.48499 26.113 2.37673 23.6838C2.26847 21.2546 2.97016 18.87 4.33704 17.022C5.70391 15.174 7.63168 14.0035 9.72262 13.7521C9.80786 15.51 9.75883 17.2732 9.5761 19.0211C8.46551 18.7786 7.91314 18.1989 7.88384 18.1734C7.77494 18.0474 7.64565 17.9475 7.50336 17.8793C7.36107 17.8111 7.20857 17.776 7.05456 17.776C6.90055 17.776 6.74804 17.8111 6.60575 17.8793C6.46347 17.9475 6.33418 18.0474 6.22528 18.1734C6.11637 18.2994 6.02999 18.449 5.97105 18.6137C5.91211 18.7783 5.88178 18.9548 5.88178 19.133C5.88178 19.3112 5.91211 19.4876 5.97105 19.6523C6.02999 19.8169 6.11637 19.9665 6.22528 20.0925C6.37619 20.2637 7.81205 21.8386 10.5548 21.8386H10.5915C13.3255 21.8302 14.7569 20.2654 14.9122 20.0874C15.0211 19.9614 15.1075 19.8118 15.1665 19.6472C15.2254 19.4825 15.2557 19.3061 15.2557 19.1279C15.2557 18.9497 15.2254 18.7732 15.1665 18.6086C15.1075 18.4439 15.0211 18.2943 14.9122 18.1683C14.8033 18.0423 14.674 17.9424 14.5318 17.8742C14.3895 17.806 14.237 17.7709 14.0829 17.7709C13.9289 17.7709 13.7764 17.806 13.6341 17.8742C13.4919 17.9424 13.3626 18.0423 13.2537 18.1683C12.8722 18.5303 12.4249 18.7876 11.9453 18.921C12.1047 17.2443 12.1503 15.5557 12.0815 13.8708C14.0846 14.3147 15.8729 15.6058 17.0979 17.4924C18.323 19.379 18.8969 21.7259 18.7077 24.0755C18.5185 26.4251 17.5799 28.6089 16.0748 30.2013C14.5697 31.7937 12.606 32.6804 10.5666 32.6885ZM18.918 15.7542C18.4901 15.1118 18.0081 14.52 17.4792 13.9877C18.4507 12.7913 19.6732 11.906 21.0278 11.4177C21.5815 12.9555 21.9559 14.5717 22.1413 16.2238C21.2491 15.9526 20.7993 15.483 20.7743 15.4542C20.6461 15.3051 20.4896 15.1925 20.3173 15.1254C20.1449 15.0584 19.9615 15.0386 19.7814 15.0677C19.6013 15.0968 19.4296 15.174 19.2797 15.2931C19.1299 15.4123 19.006 15.5702 18.918 15.7542ZM23.46 29.9761C22.2057 29.9779 20.9679 29.6455 19.8425 29.0047C20.6113 27.3648 21.0441 25.5424 21.1076 23.6782C21.1711 21.8141 20.8636 19.9579 20.2088 18.2531C21.2007 18.8364 22.299 19.1358 23.4116 19.1262H23.46C26.2101 19.1262 27.6504 17.5529 27.8057 17.3732C27.9146 17.2472 28.001 17.0976 28.0599 16.933C28.1188 16.7684 28.1492 16.5919 28.1492 16.4137C28.1492 16.2355 28.1188 16.059 28.0599 15.8944C28.001 15.7298 27.9146 15.5802 27.8057 15.4542C27.6968 15.3282 27.5675 15.2282 27.4252 15.16C27.2829 15.0918 27.1304 15.0567 26.9764 15.0567C26.8224 15.0567 26.6699 15.0918 26.5276 15.16C26.3853 15.2282 26.256 15.3282 26.1471 15.4542C26.1193 15.4864 25.5845 16.0458 24.5134 16.3018C24.337 14.4855 23.9685 12.7011 23.416 10.9888H23.46C25.6361 10.9888 27.723 11.989 29.2617 13.7694C30.8005 15.5498 31.6649 17.9645 31.6649 20.4824C31.6649 23.0003 30.8005 25.415 29.2617 27.1954C27.723 28.9758 25.6361 29.9761 23.46 29.9761Z"
+                      fill="#FFAB5E"
+                      fill-opacity="0.5"
+                    />
+                  </svg>
+                  <div class="MUSCAT_cird2_item_text">
+                    <h5>MUSCAT</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  </div>
+                </div>
+                <div class="MUSCAT_cird2_item">
+                  <svg
+                    width="27"
+                    height="47"
+                    viewBox="0 0 27 47"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M26.5445 16.5681L22.8722 1.19368C22.7899 0.84923 22.6195 0.546841 22.3863 0.331693C22.1531 0.116544 21.8697 0.000185766 21.5784 0H5.42161C5.13035 0.000185766 4.84694 0.116544 4.61375 0.331693C4.38055 0.546841 4.21007 0.84923 4.12779 1.19368L0.455489 16.5681C-0.120676 18.9246 -0.15083 21.4327 0.368433 23.8093C0.887695 26.1858 1.93568 28.3359 3.394 30.0168C5.79289 32.7902 8.87516 34.495 12.1505 34.8601V43.2554H6.75255C6.39464 43.2554 6.05139 43.4307 5.79832 43.7427C5.54524 44.0547 5.40306 44.4779 5.40306 44.9191C5.40306 45.3603 5.54524 45.7835 5.79832 46.0955C6.05139 46.4075 6.39464 46.5828 6.75255 46.5828H20.2475C20.6054 46.5828 20.9486 46.4075 21.2017 46.0955C21.4548 45.7835 21.5969 45.3603 21.5969 44.9191C21.5969 44.4779 21.4548 44.0547 21.2017 43.7427C20.9486 43.4307 20.6054 43.2554 20.2475 43.2554H14.8495V34.8601C18.1248 34.4947 21.207 32.7899 23.606 30.0168C25.0643 28.3359 26.1123 26.1858 26.6316 23.8093C27.1508 21.4327 27.1207 18.9246 26.5445 16.5681ZM6.43036 3.32734H20.5696L23.9586 17.5081C23.9737 17.5704 23.9872 17.6328 24.0007 17.6952C20.3875 19.2923 16.3187 17.3625 14.1106 15.9837C9.86144 13.3322 6.48771 12.9953 3.99959 13.5028L6.43036 3.32734ZM21.7656 27.5857C19.5248 30.1725 16.5698 31.6118 13.5 31.6118C10.4302 31.6118 7.47521 30.1725 5.23437 27.5857C4.14311 26.325 3.35948 24.7133 2.97198 22.9325C2.58448 21.1517 2.60855 19.2729 3.04145 17.5081L3.11736 17.192C5.14159 16.3476 8.35844 16.1231 12.8894 18.9534C14.7702 20.1283 17.8082 21.6256 21.0588 21.6256C22.1453 21.6322 23.227 21.4501 24.2723 21.0849C24.1346 23.565 23.2388 25.8883 21.7656 27.5857Z"
+                      fill="#FFAB5E"
+                      fill-opacity="0.5"
+                    />
+                  </svg>
+                  <div class="MUSCAT_cird2_item_text">
+                    <h5>DRY WINE</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  </div>
+                </div>
+                <div class="MUSCAT_cird2_item">
+                  <svg
+                    width="27"
+                    height="48"
+                    viewBox="0 0 27 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.9 2.37572C18.9 1.90585 19.0188 1.44653 19.2413 1.05584C19.4638 0.665157 19.7801 0.360655 20.1501 0.180842C20.5201 0.00102937 20.9273 -0.0460179 21.3201 0.0456499C21.7129 0.137318 22.0737 0.363583 22.3569 0.695834C22.6401 1.02808 22.833 1.4514 22.9111 1.91224C22.9892 2.37309 22.9491 2.85077 22.7959 3.28487C22.6426 3.71898 22.3831 4.09002 22.05 4.35106C21.717 4.61211 21.3255 4.75145 20.925 4.75145C20.388 4.75145 19.8729 4.50115 19.4931 4.05561C19.1134 3.61008 18.9 3.0058 18.9 2.37572ZM15.5453 12.914C16.7704 21.6745 16.2794 27.9128 14.0839 31.4565C13.546 32.3479 12.8566 33.0988 12.0591 33.6621C11.2615 34.2253 10.3732 34.5886 9.45007 34.7291V44.3468H12.1501C12.5081 44.3468 12.8515 44.5137 13.1046 44.8107C13.3578 45.1077 13.5001 45.5106 13.5001 45.9306C13.5001 46.3507 13.3578 46.7535 13.1046 47.0506C12.8515 47.3476 12.5081 47.5144 12.1501 47.5144H4.05009C3.69205 47.5144 3.34867 47.3476 3.0955 47.0506C2.84233 46.7535 2.7001 46.3507 2.7001 45.9306C2.7001 45.5106 2.84233 45.1077 3.0955 44.8107C3.34867 44.5137 3.69205 44.3468 4.05009 44.3468H6.75008V34.7291C5.82711 34.5879 4.939 34.2243 4.14155 33.6611C3.3441 33.098 2.65455 32.3474 2.11622 31.4565C-0.077517 27.9128 -0.568578 21.6745 0.656542 12.914C1.22619 8.91499 2.02735 4.96611 3.05447 1.09481C3.14252 0.776586 3.31421 0.499245 3.54491 0.302564C3.77561 0.105883 4.05347 -3.46302e-05 4.33865 1.09277e-06H11.8632C12.1484 -3.46302e-05 12.4262 0.105883 12.6569 0.302564C12.8876 0.499245 13.0593 0.776586 13.1474 1.09481C14.1745 4.96611 14.9756 8.91499 15.5453 12.914ZM3.67884 11.0867H12.5213C12.0151 8.00222 11.3873 5.18501 10.8709 3.16763H5.3309C4.81453 5.18501 4.19015 8.00222 3.67884 11.0867ZM12.9938 14.2543H3.20634C2.44866 20.1936 2.33897 26.4378 4.29478 29.5956C5.1689 30.9953 6.41258 31.6763 8.10007 31.6763C9.78757 31.6763 11.0329 30.9953 11.9003 29.5956C13.8544 26.4378 13.7464 20.1936 12.9938 14.2543ZM24.975 6.33526C24.5745 6.33526 24.183 6.47459 23.85 6.73564C23.517 6.99669 23.2574 7.36773 23.1042 7.80183C22.9509 8.23594 22.9108 8.71362 22.9889 9.17446C23.0671 9.63531 23.2599 10.0586 23.5431 10.3909C23.8263 10.7231 24.1871 10.9494 24.58 11.0411C24.9728 11.1327 25.3799 11.0857 25.7499 10.9059C26.12 10.7261 26.4362 10.4215 26.6587 10.0309C26.8812 9.64018 27 9.18086 27 8.71098C27 8.0809 26.7867 7.47663 26.4069 7.03109C26.0271 6.58556 25.5121 6.33526 24.975 6.33526ZM20.925 15.8381C20.5245 15.8381 20.133 15.9775 19.8 16.2385C19.467 16.4996 19.2074 16.8706 19.0542 17.3047C18.9009 17.7388 18.8608 18.2165 18.9389 18.6774C19.0171 19.1382 19.2099 19.5615 19.4931 19.8938C19.7763 20.226 20.1372 20.4523 20.53 20.5439C20.9228 20.6356 21.3299 20.5886 21.7 20.4088C22.07 20.2289 22.3862 19.9244 22.6087 19.5338C22.8313 19.1431 22.95 18.6837 22.95 18.2139C22.95 17.5838 22.7367 16.9795 22.3569 16.534C21.9771 16.0884 21.4621 15.8381 20.925 15.8381Z"
+                      fill="#FFAB5E"
+                      fill-opacity="0.5"
+                    />
+                  </svg>
+                  <div class="MUSCAT_cird2_item_text">
+                    <h5>DINNER</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------contect--------->
+    <section class="contact-section">
+      <div class="container">
+        <div class="custom">
+          <div class="row">
+            <div class="col50">
+              <div class="contact-left">
+                <p class="sub-text">Lorem ipsum dolor sit amet consectetur.</p>
+
+                <h5>GET IN TOUCH & MEET</h5>
+                <h6>GREAT IN PERSON</h6>
+                <form>
+                  <input type="text" placeholder="Full name*" required />
+
+                  <input type="email" placeholder="E-mail*" required />
+
+                  <textarea placeholder="Message*" rows="4"></textarea>
+
+                  <button type="submit">SEND</button>
+                </form>
+              </div>
+            </div>
+            <div class="col50">
+              <div class="contact-right">
+                <div class="map">
+                  <iframe
+                    src="https://maps.google.com/maps?q=kolkata&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0"
+                  >
+                  </iframe>
+                </div>
+
+                <div class="contact-info">
+                  <h6>CONTACT INFO</h6>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------------footer----------->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="custom">
+          <a href="index.html" class="footer_logo"
+            ><img src="img/footer_icon.png" alt="logo"
+          /></a>
+          <div class="footer_item">
+            <!-- Orders -->
+            <div class="footer-box">
+              <p class="footer_title">ORDERS</p>
+
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+              <p class="footer_box_p">Lorem ipsum dolor sit amet consectetur.</p>
+
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <!-- Contact -->
+            <div class="footer-box contact">
+              <p class="footer_title">CONTACT</p>
+
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+              <p class="phone">+1234000021 +4321000012 +0000543210</p>
+
+              <p>Lorem ipsum@gmail.com</p>
+
+              <div class="social">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Footer -->
+
+        <div class="bottom-footer">
+          <a href="#">Privacy Policy</a>
+
+          <p>Copyright &copy; Qade Interactive 2025</p>
+
+          <a href="#">Impresun</a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
